@@ -1,0 +1,69 @@
+body{
+	background-color: #575757;
+	margin: 0px;
+	padding: 0px;
+	/*width: 768px;*/
+}
+.container {
+	max-width: 768px;
+	width: 100%;
+	height: 100vh;
+	margin:auto;
+	background-image: url(../img/tiger.jpg);
+	background-repeat: no-repeat no-repeat;
+	background-size: 100% 100%;
+}
+.panel {
+	/*background-color: #ccc;*/
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	margin-bottom: 30px;
+}
+.panel > div {
+	width:49%;
+	float: left;
+	height: auto;
+	/*background-color: green;*/
+}
+.panel > div:nth-child(1) {
+	padding-right:1%;
+}
+.panel > div:nth-child(2) {
+	padding-left:1%;
+}
+.panel > div:nth-child(1)>button {
+	float: right;
+}
+.panel  button {
+	border:0px;
+	padding: 10px;
+	font-family: arial;
+	font-size: 14px;
+	background-color: #4FA626;
+	color: #FFF;
+	font-weight: bold;
+	width: 150px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+	opacity: 0.9;
+	-webkit-transition:background-color 0.3s linear;
+	-moz-transition:background-color 0.3s linear;
+	-o-transition:background-color 0.3s linear;
+	-ms-transition:background-color 0.3s linear;
+	 transition:background-color 0.3s linear;
+}
+.panel button:hover {
+	background-color: #05592A;
+}
+#logo {
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+	position: fixed;
+	opacity: 0.8;
+
+}
