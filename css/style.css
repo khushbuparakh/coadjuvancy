@@ -77,14 +77,14 @@ button {
 
 }
 .about {
-	width: 400px;
+	width: 280px;
 	height: 300px;
 	border: 1px solid #000;
 	background-color: #FFF;
 	text-align:justify;
 	font-family:arial;
 	opacity: .7;
-	font-size:12;
+	font-size:8;
 	padding: 10px;
 	color:#000;
 	font-weight: normal;
@@ -92,7 +92,7 @@ button {
 	position: fixed;
 	top:50%;
 	margin-top: -150px;
-	margin-left: -200px;
+	margin-left: -150px;
 	left: 50%;
 }
 .user-area{
@@ -105,16 +105,21 @@ button {
 	width: 760px;
 	height: 200px;
 	background-color: yellow;
+	position: relative;
+	left:0px;
+	top: 0px;
 }
 .user-message{
 	width:380px;
 	height:200px;
 	float: left;
 	background-color:green;
+	/*visibility: hidden;*/
 }
 .user-compose{
 	width: 380px;
 	height: 200px;
 	background-color: red;
 	float: left;
+	/*visibility: hidden;*/
 }
