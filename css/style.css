@@ -114,10 +114,20 @@ button {
 	/*visibility: hidden;*/
 }
 textarea{
-	width: 272px;
+	width: 259px;
 	height: 150px;
+	padding: 8px;
 	resize:none;
 	font-family: arial;
+	border:2px solid #ccc;
+	border-radius: 5px;
+}
+#title,#caption {
+	width: 259px;
+	padding: 8px;
+	border:2px solid #ccc;
+	margin-bottom: 10px;
+	border-radius: 5px;
 }
 #fb{
 	margin: auto !important;
@@ -132,3 +142,17 @@ textarea{
 	text-align: right;
 	color:#000;
 }
+::-webkit-input-placeholder {
+   color: #333;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #333;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #333;
+}
+
+:-ms-input-placeholder {  
+   color: #333;

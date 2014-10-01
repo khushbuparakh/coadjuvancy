@@ -19,9 +19,11 @@
 			<div class="user-area">
 				<div class="user-areain">
 					<div class="user-compose">
-						<textarea placeholder="type in to write your custom message"></textarea>
+						<input type="text" id="title" value="" placeholder="Enter Title Here">
+						<input type="text" id="caption" value="" placeholder="Enter Caption Here">
+						<textarea placeholder="Type in to write your custom message"></textarea>
 						<div class="count"></div>
-						<button id="fb">post to fb </button>
+						<a href="#" id="fbpost"><button id="fb">Post to Facebook </button></a>
 					</div>
 					<div class="user-message">
 						<p></p>
@@ -33,13 +35,34 @@
 </body>
 <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="scripts/app.js"></script>
-	<script>
-           $('document').ready(function() {
-                   $.getJSON('http://162.243.6.82/coadjuvancy/index.php', function(jd) {
-                           for(i=0;i<jd.coadjuvancy.length;i++){
- 					$('p').append('<a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://developers.facebook.com/docs/reference/dialogs/&picture=http://fbrell.com/f8.jpg&name='+encodeURI(jd.coadjuvancy[i].message)+'&caption=Reference%20Documentation&description=Dialogs%20provide%20a%20simple,%20consistent%20interface%20for%20applications%20to%20interact%20with%20users.&message=Coadjuvancy%20is%20fb%20app!&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php">Share this on facebook</a>'+jd.coadjuvancy[i].message+'<br>');
- 				}
-                   });
-           });
-   </script>
+<script>
+$('document').ready(function() {
+	$.getJSON('http://162.243.6.82/coadjuvancy/index.php', function(jd) {
+		for(i=0;i<jd.coadjuvancy.length;i++){
+			$('p').append('<a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://developers.facebook.com/docs/reference/dialogs/&picture=http://fbrell.com/f8.jpg&name='+encodeURI(jd.coadjuvancy[i].message)+'&caption=Reference%20Documentation&description=Dialogs%20provide%20a%20simple,%20consistent%20interface%20for%20applications%20to%20interact%20with%20users.&message=Coadjuvancy%20is%20fb%20app!&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php">Share this on facebook</a>'+jd.coadjuvancy[i].message+'<br>');
+		}
+	});
+});
+</script>
+<script type="text/javascript">
+	$('document').ready(function () {
+		$('#fb').click(function(){
+			var title = $('#title').val();
+			var caption = $('#caption').val();
+			var message = $('textarea').val();
+			if(title.length ==0){
+				$('#title').val("Enter Title Here").css('color','red');
+			}
+			else if(caption.length == 0){
+				$('#caption').val("Enter Caption Here").css('color','red');
+			}
+			else if(message.length == 0){
+				$('textarea').val("Enter Message Here").css('color','red');
+			}
+			else {
+				$('#fbpost').attr('href','http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://developers.facebook.com/docs/reference/dialogs/&picture=http://pixelcount.net/coadjuvancy/logo.png&name='+encodeURI(title)+'&caption='+encodeURI(caption)+'&description='+encodeURI(message)+'&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php');
+			}
+		});
+	});
+</script>
 </html>

@@ -27,3 +27,9 @@ $('document').ready(function(){
 
 	});
 });
+
+$('document').ready(function(){
+	$('textarea,input[type="text"]').focusin().keyup(function(){
+		$(this).css('color','#333')
+	});
+});
