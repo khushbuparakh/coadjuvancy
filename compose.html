@@ -26,20 +26,22 @@
 						<a href="#" id="fbpost"><button id="fb">Post to Facebook </button></a>
 					</div>
 					<div class="user-message">
-						<p></p>
+
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<footer><a href="#" id="about">About</a></footer>
 </body>
 <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="scripts/app.js"></script>
 <script>
-$('document').ready(function() {
+$(window).load(function() {
 	$.getJSON('http://162.243.6.82/coadjuvancy/index.php', function(jd) {
 		for(i=0;i<jd.coadjuvancy.length;i++){
-			$('p').append('<a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://developers.facebook.com/docs/reference/dialogs/&picture=http://fbrell.com/f8.jpg&name='+encodeURI(jd.coadjuvancy[i].message)+'&caption=Reference%20Documentation&description=Dialogs%20provide%20a%20simple,%20consistent%20interface%20for%20applications%20to%20interact%20with%20users.&message=Coadjuvancy%20is%20fb%20app!&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php">Share this on facebook</a>'+jd.coadjuvancy[i].message+'<br>');
+			$('.user-message').append('<p class="point"><a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://developers.facebook.com/docs/reference/dialogs/&picture=http://pixelcount.net/coadjuvancy/logo.png&name='+encodeURI(jd.coadjuvancy[i].title)+'&caption='+encodeURI(jd.coadjuvancy[i].caption)+'&description='+encodeURI(jd.coadjuvancy[i].description)+'&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php">'+jd.coadjuvancy[i].description+'</a></p>');
 		}
 	});
 });
@@ -62,6 +64,13 @@ $('document').ready(function() {
 			else {
 				$('#fbpost').attr('href','http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://developers.facebook.com/docs/reference/dialogs/&picture=http://pixelcount.net/coadjuvancy/logo.png&name='+encodeURI(title)+'&caption='+encodeURI(caption)+'&description='+encodeURI(message)+'&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php');
 			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	$('document').ready(function(){
+		$('#about').click(function(){
+			alert("app developed by: khushbu");
 		});
 	});
 </script>

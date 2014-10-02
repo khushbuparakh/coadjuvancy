@@ -18,11 +18,11 @@ $('document').ready(function(){
 		$('.count').text(150-words.length);
 		if(words.length>150){
 			$('#fb').css('background-color','red');
-			$('#count').css('color','red');
+			$('.count').css('color','red');
 		}
 		else {
 			$('#fb').css('background-color','green');
-			$('#count').css('color','black');
+			$('.count').css('color','black');
 		}
 
 	});
@@ -33,3 +33,10 @@ $('document').ready(function(){
 		$(this).css('color','#333')
 	});
 });
+
+
+	$('document').ready(function(){
+		$('#about').click(function(){
+			alert("app developed by: khushbu");
+		});
+	});
