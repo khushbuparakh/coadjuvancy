@@ -84,7 +84,7 @@ button {
 	color:#000;
 	margin-left:auto;
 	margin-right: auto;
-	margin-top:10px;
+	margin-top:5px;
 	font-weight: normal;
 	border-radius: 10px;
 }
@@ -170,7 +170,7 @@ textarea{
 footer{
 color: #FFF;
 text-align: center;
-padding-top: 10px;
+padding-top: 2px;
 padding-bottom: 10px;
 font-weight: bold;
 }
