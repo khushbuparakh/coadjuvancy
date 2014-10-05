@@ -37,9 +37,9 @@
 
 	<!-- <a href="http://www.facebook.com/dialog/feed?
 app_id=723312537738366&
-link=http://pixelcount.net/coadjuvancy/index.html& picture=http://fbrell.com/f8.jpg&
+link=http://pixelcount.n/ki/coadjuvancy/index.html& picture=http://fbrell.com/f8.jpg&
 name=Facebook%20Dialogs&
-caption=Reference%20Documentation& description=Dialogs%20provide%20a%20simple,%20consistent%20interface%20for%20applications%20to%20interact%20with%20users.& message=Facebook%20Dialogs%20are%20so%20easy!& redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php">Share on FAcebook</a> -->
+caption=Reference%20Documentation& description=Dialogs%20provide%20a%20simple,%20consistent%20interface%20for%20applications%20to%20interact%20with%20users.& message=Facebook%20Dialogs%20are%20so%20easy!& redirect_uri=http://www.khushbuparakh.in/coadjuvancy/index.php">Share on FAcebook</a> -->
 </body>
 <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="scripts/app.js"></script>
@@ -47,7 +47,7 @@ caption=Reference%20Documentation& description=Dialogs%20provide%20a%20simple,%2
 $(window).load(function() {
 	$.getJSON('http://162.243.6.82/coadjuvancy/index.php', function(jd) {
 		for(i=0;i<jd.coadjuvancy.length;i++){
-			$('.user-message').append('<p class="point"><a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&picture=http://pixelcount.net/coadjuvancy/logo.png&name='+encodeURI(jd.coadjuvancy[i].title)+'&caption='+encodeURI(jd.coadjuvancy[i].caption)+'&description='+encodeURI(jd.coadjuvancy[i].description)+'&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php">'+jd.coadjuvancy[i].description+'</a></p>');
+			$('.user-message').append('<p class="point"><a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/kiwi/coadjuvancy/index.html&picture=http://khushbuparakh.in/coadjuvancy/images/logo.png&name='+encodeURI(jd.coadjuvancy[i].title)+'&caption='+encodeURI(jd.coadjuvancy[i].caption)+'&description='+encodeURI(jd.coadjuvancy[i].description)+'&redirect_uri=http://www.khushbuparakh.in/coadjuvancy/index.html">'+jd.coadjuvancy[i].description+'</a></p>');
 		}
 	});
 });
@@ -68,7 +68,7 @@ $(window).load(function() {
 				$('textarea').val("Enter Message Here").css('color','red');
 			}
 			else {
-				$('#fbpost').attr('href','http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://developers.facebook.com/docs/reference/dialogs/&picture=http://pixelcount.net/coadjuvancy/logo.png&name='+encodeURI(title)+'&caption='+encodeURI(caption)+'&description='+encodeURI(message)+'&redirect_uri=http://www.pixelcount.net/coadjuvancy/index.php');
+				$('#fbpost').attr('href','http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/kiwi/coadjuvancy/index.html&picture=http://khushbuparakh.in/kiwi/coadjuvancy/images/logo.png&name='+encodeURI(title)+'&caption='+encodeURI(caption)+'&description='+encodeURI(message)+'&redirect_uri=http://www.khushbuparakh.in/kiwi/coadjuvancy/index.html');
 			}
 		});
 	});
