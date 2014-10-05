@@ -37,6 +37,6 @@ $('document').ready(function(){
 
 	$('document').ready(function(){
 		$('#about').click(function(){
-			alert("app developed by: khushbu");
+			alert("An Initative App By: Khushbu Parakh \n\n https://github.com/khushbuparakh");
 		});
 	});
