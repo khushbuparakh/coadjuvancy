@@ -78,13 +78,13 @@ button {
 	background-color: #FFF;
 	text-align:justify;
 	font-family:arial;
-	/*opacity: .7;*/
+	opacity: 0.9;
 	font-size:8;
 	padding: 10px;
 	color:#000;
 	margin-left:auto;
 	margin-right: auto;
-	margin-top:30px;
+	margin-top:10px;
 	font-weight: normal;
 	border-radius: 10px;
 }
