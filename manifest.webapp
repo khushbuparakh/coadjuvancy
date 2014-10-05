@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Coadjuvancy",
+  "description": "An application to spread wildlife conservation messages on Facebook.",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/logo.png"
+  },
+  "developer": {
+    "name": "Khushbu Parakh",
+    "url": "coadjuvancy.khushbuparakh.in"
+  },
+  "default_locale": "en"
+}
