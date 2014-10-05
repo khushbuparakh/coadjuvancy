@@ -47,7 +47,7 @@ caption=Reference%20Documentation& description=Dialogs%20provide%20a%20simple,%2
 $(window).load(function() {
 	$.getJSON('http://162.243.6.82/coadjuvancy/index.php', function(jd) {
 		for(i=0;i<jd.coadjuvancy.length;i++){
-			$('.user-message').append('<p class="point"><a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/kiwi/coadjuvancy/index.html&picture=http://khushbuparakh.in/coadjuvancy/img/logo.png&name='+encodeURI(jd.coadjuvancy[i].title)+'&caption='+encodeURI(jd.coadjuvancy[i].caption)+'&description='+encodeURI(jd.coadjuvancy[i].description)+'&redirect_uri=http://www.khushbuparakh.in/coadjuvancy/compose.html">'+jd.coadjuvancy[i].description+'</a></p>');
+			$('.user-message').append('<p class="point"><a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/coadjuvancy/index.html&picture=http://khushbuparakh.in/coadjuvancy/img/logo.png&name='+encodeURI(jd.coadjuvancy[i].title)+'&caption='+encodeURI(jd.coadjuvancy[i].caption)+'&description='+encodeURI(jd.coadjuvancy[i].description)+'&redirect_uri=http://www.khushbuparakh.in/coadjuvancy/compose.html">'+jd.coadjuvancy[i].description+'</a></p>');
 		}
 	});
 });
@@ -68,7 +68,7 @@ $(window).load(function() {
 				$('textarea').val("Enter Message Here").css('color','red');
 			}
 			else {
-				$('#fbpost').attr('href','http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/kiwi/coadjuvancy/index.html&picture=http://khushbuparakh.in/kiwi/coadjuvancy/img/logo.png&name='+encodeURI(title)+'&caption='+encodeURI(caption)+'&description='+encodeURI(message)+'&redirect_uri=http://www.khushbuparakh.in/coadjuvancy/compose.html');
+				$('#fbpost').attr('href','http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/coadjuvancy/index.html&picture=http://khushbuparakh.in/kiwi/coadjuvancy/img/logo.png&name='+encodeURI(title)+'&caption='+encodeURI(caption)+'&description='+encodeURI(message)+'&redirect_uri=http://www.khushbuparakh.in/coadjuvancy/compose.html');
 			}
 		});
 	});
