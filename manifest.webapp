@@ -5,7 +5,7 @@
   "description": "An application to spread wildlife conservation messages on Facebook.",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/img/128.png"
+    "128": "/img/128.png",
     "512" :"/img/logo512.png"
   },
   "developer": {
