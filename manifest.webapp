@@ -1,11 +1,12 @@
-Content-Type: application/x-web-app-manifest+json
+
 {
   "version": "1.0",
   "name": "Coadjuvancy",
   "description": "An application to spread wildlife conservation messages on Facebook.",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/img/logo.png"
+    "128": "/img/128.png"
+    "512" :"/img/logo512.png"
   },
   "developer": {
     "name": "Khushbu Parakh",
