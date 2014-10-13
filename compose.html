@@ -23,7 +23,7 @@
 						<input type="text" id="caption" value="" placeholder="Enter Caption Here">
 						<textarea placeholder="Type in to write your custom message"></textarea>
 						<div class="count"></div>
-						<a href="#" id="fbpost"><button id="fb">Post to Facebook </button></a>
+						<a href="#" target="_blank" id="fbpost"><button id="fb">Post to Facebook </button></a>
 					</div>
 					<div class="user-message">
 
@@ -47,7 +47,7 @@ caption=Reference%20Documentation& description=Dialogs%20provide%20a%20simple,%2
 $(window).load(function() {
 	$.getJSON('http://162.243.6.82/coadjuvancy/index.php', function(jd) {
 		for(i=0;i<jd.coadjuvancy.length;i++){
-			$('.user-message').append('<p class="point"><a href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/coadjuvancy/index.html&picture=http://khushbuparakh.in/coadjuvancy/img/logo.png&name='+encodeURI(jd.coadjuvancy[i].title)+'&caption='+encodeURI(jd.coadjuvancy[i].caption)+'&description='+encodeURI(jd.coadjuvancy[i].description)+'&redirect_uri=http://www.khushbuparakh.in/coadjuvancy/compose.html">'+jd.coadjuvancy[i].description+'</a></p>');
+			$('.user-message').append('<p class="point"><a target="_blank"  href="http://www.facebook.com/dialog/feed?app_id=723312537738366&link=http://www.khushbuparakh.in/coadjuvancy/index.html&picture=http://khushbuparakh.in/coadjuvancy/img/logo.png&name='+encodeURI(jd.coadjuvancy[i].title)+'&caption='+encodeURI(jd.coadjuvancy[i].caption)+'&description='+encodeURI(jd.coadjuvancy[i].description)+'&redirect_uri=http://www.khushbuparakh.in/coadjuvancy/compose.html">'+jd.coadjuvancy[i].description+'</a></p>');
 		}
 	});
 });
