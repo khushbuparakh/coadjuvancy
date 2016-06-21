@@ -19,3 +19,9 @@ Development
 Disclaimer
 ----------
 No special data Analyst right now.
+
+Project Contributors
+--------------------
+Two contributors
+Khushbu Parakh(khushbuparakh@hotmail.com)
+Ayush (Backend)
